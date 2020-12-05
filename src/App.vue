@@ -20,7 +20,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this)
+    // console.log(this.api)
     // 持久化
     // this.$store.commit('storage/setAccessToken', 'token')
   }

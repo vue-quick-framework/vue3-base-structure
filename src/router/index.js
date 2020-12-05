@@ -21,5 +21,6 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+console.log(111, router.install)
 
 export default router
