@@ -1,10 +1,20 @@
 <template>
   <div id="nav">
+    <!-- {{ $store.state.storage.accessToken }} -->
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
 </template>
+
+<script>
+export default {
+  mounted() {
+    // 持久化
+    // this.$store.commit('storage/setAccessToken', 'token')
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
