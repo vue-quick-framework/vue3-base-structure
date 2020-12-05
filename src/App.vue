@@ -6,6 +6,7 @@
     <router-link to="/about">About</router-link>
     <el-button @click="changeLanguage('zh_CN')">zh_CN</el-button>
     <el-button @click="changeLanguage('en_US')">en_US</el-button>
+    <svg-icon icon="404"></svg-icon>
   </div>
   <router-view/>
 </template>
