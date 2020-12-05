@@ -5,6 +5,8 @@ import router from './router'
 import store from './store'
 import api from './api'
 
+import './assets/stylesheets/application.scss'
+
 import { ElButton } from 'element-plus'
 import validators from './utils/validators'
 

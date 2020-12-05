@@ -1,0 +1,7 @@
+@import "mixins/functions";
+@import "mixins/classes/disabled";
+
+$theme: (
+  bg-page: #f8f8f8
+)
+//map_get($theme, bg-page)
