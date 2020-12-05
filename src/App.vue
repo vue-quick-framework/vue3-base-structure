@@ -4,9 +4,8 @@
     {{ $t('message.hello') }}
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-    <button @click="changeLanguage('zh_CN')">zh_CN</button>
-    <button @click="changeLanguage('en_US')">en_US</button>
-    <button></button>
+    <el-button @click="changeLanguage('zh_CN')">zh_CN</el-button>
+    <el-button @click="changeLanguage('en_US')">en_US</el-button>
   </div>
   <router-view/>
 </template>
