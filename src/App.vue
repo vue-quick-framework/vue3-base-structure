@@ -1,15 +1,26 @@
 <template>
   <div id="nav">
     <!-- {{ $store.state.storage.accessToken }} -->
+    {{ $t('message.hello') }}
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+    <button @click="changeLanguage('zh_CN')">zh_CN</button>
+    <button @click="changeLanguage('en_US')">en_US</button>
+    <button></button>
   </div>
   <router-view/>
 </template>
 
 <script>
 export default {
+  methods: {
+    changeLanguage(lang) {
+      this.$store.commit('storage/setLanguage', lang)
+      this.$i18n.locale = lang
+    }
+  },
   mounted() {
+    console.log(this)
     // 持久化
     // this.$store.commit('storage/setAccessToken', 'token')
   }
